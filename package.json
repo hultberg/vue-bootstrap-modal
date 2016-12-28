@@ -1,4 +1,7 @@
 {
+  "name": "vue-bootstrap-modal",
+  "version": "1.0.0",
+  "author": "hultberg",
   "dependencies": {
     "bootstrap": "4.0.0-alpha.5",
     "jquery": "^3.1.1",
