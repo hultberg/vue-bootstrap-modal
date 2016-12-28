@@ -1,7 +1,16 @@
 {
-  "name": "vue-bootstrap-modal",
+  "name": "vue-bootstrap4-modal",
   "version": "1.0.0",
   "author": "hultberg",
+  "homepage": "https://github.com/hultberg/vue-bootstrap-modal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hultberg/vue-bootstrap-modal/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hultberg/vue-bootstrap-modal.git"
+  },
   "dependencies": {
     "bootstrap": "4.0.0-alpha.5",
     "jquery": "^3.1.1",
