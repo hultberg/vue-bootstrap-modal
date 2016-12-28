@@ -22,7 +22,7 @@ A simple example:
 </template>
 
 <script>
-import ModalComponent from 'vue-bootstrap-modal'
+import ModalComponent from 'vue-bootstrap4-modal'
 
 export default {
     components: {
