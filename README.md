@@ -52,7 +52,7 @@ export default {
 </script>
 ```
 
-To open the modal, one 
+See live example here: https://hultberg.no/bs-modal
 
 ### Callbacks
 
