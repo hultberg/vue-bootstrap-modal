@@ -4,6 +4,13 @@ A simple and small vue component based on bootstrap 4 modal.
 
 Written in es6, it is your responsibility to ensure you support it. Use babel to compile es6 to es5 or lower.
 
+## Install
+
+Install via npm:
+```
+$ npm install vue-bootstrap4-modal
+```
+
 ## Usage
 
 A simple example:
