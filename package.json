@@ -1,6 +1,7 @@
 {
   "name": "vue-bootstrap4-modal",
   "version": "1.0.0",
+  "main": "src/modal.vue",
   "author": "hultberg",
   "homepage": "https://github.com/hultberg/vue-bootstrap-modal",
   "license": "MIT",
