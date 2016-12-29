@@ -1,3 +1,8 @@
+# 1.0.2
+
+* Reset state in example as child component can't.
+* Some fixes in readme.
+
 # 1.0.1
 
 * Add "main" property in package.json, fixes #1
