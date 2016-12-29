@@ -50,6 +50,10 @@ export default {
 
     handleClose() {
       console.log('Modal has closed.');
+
+      // Make sure to reset the show modal state, as the child component
+      // can not change this, parent must do it.
+      this.showModal = false
     }
   }
 }

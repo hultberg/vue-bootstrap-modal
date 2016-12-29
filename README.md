@@ -53,6 +53,8 @@ export default {
 
         handleClose() {
             console.log('Modal has closed.');
+            
+            this.showModal = false
         }
     }
 }
