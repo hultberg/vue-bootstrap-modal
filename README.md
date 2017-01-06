@@ -1,15 +1,19 @@
 # Vue Bootstrap modal
 
-A simple and small vue component based on bootstrap 4 modal.
+A simple and small vue component for bootstrap 4 modal.
 
-Written in es6, it is your responsibility to ensure you support it. Use babel to compile es6 to es5 or lower.
+Written with es6, it is your responsibility to ensure you support it. Use babel to compile es6 to es5 or lower.
 
 ## Install
 
-Install via npm:
+Install via [npm](https://npmjs.org/packages/vue-bootstrap4-modal):
 ```
 $ npm install vue-bootstrap4-modal
 ```
+
+Bootstrap 4 is a dependency of this project so you can compile it on your own.
+
+Remember to make sure the css for bootstrap is included in your webpage.
 
 ## Usage
 
