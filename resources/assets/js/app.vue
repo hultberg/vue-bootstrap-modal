@@ -6,10 +6,10 @@
         <p>Press the button to open the modal.</p>
         <bs-modal v-bind:show="this.showModal" v-bind:on-open="this.handleOpen" v-bind:on-close="this.handleClose">
           <div class="modal-header">
+            <h5 class="modal-title">Modal title</h5>
             <button type="button" class="close" v-on:click="this.toggleModal" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
-            <h4 class="modal-title">A modal</h4>
           </div>
           <div class="modal-body">
             Some content displayed in the modal.
