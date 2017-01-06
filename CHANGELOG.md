@@ -1,3 +1,8 @@
+# 2.1.0
+
+* Support for bootstrap alpha 6 added.
+* Some code style fixes.
+
 # 1.0.2
 
 * Reset state in example as child component can't.
