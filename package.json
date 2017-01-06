@@ -13,7 +13,7 @@
     "url": "https://github.com/hultberg/vue-bootstrap-modal.git"
   },
   "dependencies": {
-    "bootstrap": "4.0.0-alpha.5",
+    "bootstrap": "4.0.0-alpha.6",
     "jquery": "^3.1.1",
     "vue": "^2.1.8"
   },
