@@ -31,7 +31,7 @@ export default {
     this.$nextTick(() => {
       // If the esc button is typed, close modal.
       document.addEventListener('keydown', (e) => {
-        if (this.show && e.keyCode == 27) {
+        if (this.show && e.keyCode === 27) {
           this.close()
         }
       })
@@ -41,10 +41,11 @@ export default {
   watch: {
     // Watch for a change in show, so we can call for open or close.
     show(value) {
-      if (value)
+      if (value) {
         this.open()
-      else if (!value)
+      } else if ( ! value) {
         this.close()
+      }
     }
   },
 
@@ -53,14 +54,16 @@ export default {
       $(this.$el).modal('hide')
 
       // Next, call a defined callback.
-      if (this.onClose !== null)
+      if (this.onClose !== null) {
         this.onClose()
+      }
     },
 
     open() {
       // First, call a defined callback.
-      if (this.onOpen !== null)
+      if (this.onOpen !== null) {
         this.onOpen()
+      }
 
       $(this.$el).modal('show')
     }
