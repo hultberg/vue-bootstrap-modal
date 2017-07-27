@@ -3,6 +3,7 @@
 * Refactoring of demo.
 * jQuery and Vue is now peerDependency.
 * Modal.vue is now using bootstrap/js/src/modal.js directly, instead of via global functions.
+* Modal is now disposed via beforeDestroy vue lifecycle hook.
 
 # 2.1.0
 
