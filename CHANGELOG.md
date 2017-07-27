@@ -1,3 +1,9 @@
+# 2.2.0
+
+* Refactoring of demo.
+* jQuery and Vue is now peerDependency.
+* Modal.vue is now using bootstrap/js/src/modal.js directly, instead of via global functions.
+
 # 2.1.0
 
 * Support for bootstrap alpha 6 added.
