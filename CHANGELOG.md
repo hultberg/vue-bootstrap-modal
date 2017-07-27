@@ -1,3 +1,8 @@
+# 2.2.1
+
+* Remove event listener for esc keydown when component is destroyed.
+* Added name for component.
+
 # 2.2.0
 
 * Refactoring of demo.
