@@ -11,9 +11,25 @@ Install via [npm](https://npmjs.org/packages/vue-bootstrap4-modal):
 $ npm install vue-bootstrap4-modal
 ```
 
-Bootstrap 4 is a dependency of this project so you can compile it on your own.
+Bootstrap styling for modals is required to be included. jQuery must be provided globally on the page this component is used on. If you are compiling via webpack, make sure you Provide jquery, for instance:
+```js
+// webpack.config.js
+
+//...
+  plugins: [
+    new webpack.ProvidePlugin({
+      jQuery: 'jquery'
+    }),
+  ]
+//...
+
+```
 
 Remember to make sure the css for bootstrap is included in your webpage.
+
+## Demo
+
+https://hultberg.github.io/vue-bootstrap-modal/
 
 ## Usage
 
@@ -65,7 +81,7 @@ export default {
 </script>
 ```
 
-See live example here: https://hultberg.no/bs-modal
+See live example here: https://hultberg.github.io/vue-bootstrap-modal/
 
 ### Callbacks
 
