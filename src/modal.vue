@@ -12,6 +12,8 @@
 import Modal from 'bootstrap/js/src/modal';
 
 export default {
+  name: 'modal',
+
   props: {
     show: {
       type: Boolean,
