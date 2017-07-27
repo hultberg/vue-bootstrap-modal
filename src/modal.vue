@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import $ from 'jquery'
+import Modal from 'bootstrap/js/src/modal';
 
 export default {
   props: {
@@ -27,15 +27,21 @@ export default {
     }
   },
 
-  created() {
-    this.$nextTick(() => {
-      // If the esc button is typed, close modal.
-      document.addEventListener('keydown', (e) => {
-        if (this.show && e.keyCode === 27) {
-          this.close()
-        }
-      })
+  mounted() {
+    this.modalInstance = new Modal(this.$el);
+
+    // If the esc button is typed, close modal.
+    document.addEventListener('keydown', (e) => {
+      if (this.show && e.keyCode === 27) {
+        this.close()
+      }
     })
+  },
+
+  data() {
+    return {
+      modalInstance: null,
+    };
   },
 
   watch: {
@@ -49,9 +55,18 @@ export default {
     }
   },
 
+  beforeDestroy() {
+    if (this.isDef(this.modalInstance)) {
+      this.modalInstance.dispose();
+      this.modalInstance = null;
+    }
+  },
+
   methods: {
     close() {
-      $(this.$el).modal('hide')
+      if (this.isDef(this.modalInstance)) {
+        this.modalInstance.hide();
+      }
 
       // Next, call a defined callback.
       if (this.onClose !== null) {
@@ -61,12 +76,16 @@ export default {
 
     open() {
       // First, call a defined callback.
-      if (this.onOpen !== null) {
+      if (this.isDef(this.onOpen)) {
         this.onOpen()
       }
 
-      $(this.$el).modal('show')
-    }
+      this.modalInstance.show();
+    },
+
+    isDef(obj) {
+      return typeof obj !== undefined && obj !== null;
+    },
   }
 }
 </script>

@@ -1,11 +1,7 @@
-import Vue from 'vue'
-import $ from 'jquery'
-
-// Kinda "hack" to import bs.
-window.Tether = require("tether");
-require('../../../node_modules/bootstrap/dist/js/bootstrap.js');
+import Vue from 'vue';
+import App from '@/resources/assets/js/app.vue';
 
 new Vue({
   el: "#app",
-  render: (h) => h(require('./app.vue'))
-})
+  render: (h) => h(App),
+});
