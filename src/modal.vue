@@ -1,6 +1,12 @@
 <template>
-  <div class="modal fade" v-show="this.show" v-on:click="this.close" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog" role="document" v-on:click.stop>
+  <div
+    class="modal fade"
+    tabindex="-1"
+    role="dialog"
+    aria-hidden="true"
+    v-show="this.show"
+    @click="this.close">
+    <div class="modal-dialog" role="document" @click.stop>
       <div class="modal-content">
         <slot></slot>
       </div>
