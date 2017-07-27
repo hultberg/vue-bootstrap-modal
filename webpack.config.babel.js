@@ -20,11 +20,11 @@ export default {
   output: {
     filename: "[name].js",
     publicPath: "/",
-    path: path.resolve(__dirname, 'public/'),
+    path: path.resolve(__dirname, 'docs/'),
   },
 
   devServer: {
-    contentBase: path.join(__dirname, "public"),
+    contentBase: path.join(__dirname, "docs"),
     compress: false,
     port: 9090,
   },
