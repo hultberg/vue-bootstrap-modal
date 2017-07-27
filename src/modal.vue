@@ -39,11 +39,7 @@ export default {
     this.modalInstance = new Modal(this.$el);
 
     // If the esc button is typed, close modal.
-    document.addEventListener('keydown', (e) => {
-      if (this.show && e.keyCode === 27) {
-        this.close()
-      }
-    })
+    document.addEventListener('keydown', this.handleKeydown);
   },
 
   data() {
@@ -64,6 +60,8 @@ export default {
   },
 
   beforeDestroy() {
+    document.removeEventListener('keydown', this.handleKeydown);
+
     if (this.isDef(this.modalInstance)) {
       this.modalInstance.dispose();
       this.modalInstance = null;
@@ -71,6 +69,12 @@ export default {
   },
 
   methods: {
+    handleKeydown(e) {
+      if (this.show && e.keyCode === 27) {
+        this.close();
+      }
+    },
+
     close() {
       if (this.isDef(this.modalInstance)) {
         this.modalInstance.hide();
